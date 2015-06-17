@@ -1,0 +1,131 @@
+<!-- CC3206 Programming Project
+Lecture Class: 203
+Lecturer: Dr Simon WONG
+Group Member: CHAN You Zhi Eugene (11036677A)
+Group Member: FONG Chi Fai (11058147A)
+Group Member: SO Chun Kit (11048455A)
+Group Member: SO Tik Hang (111030753A)
+Group Member: WONG Ka Wai (11038591A)
+Group Member: YEUNG Chi Shing (11062622A) -->
+
+<!-- Change those browsers which support DOCTYPE into standard mode
+Using the instruction of W3C to read CSS and XHTML -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<!-- Text coding type is utf-8 -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Zero Pollution</title>
+		<!-- Heading icon -->
+		<link rel="shortcut icon" href="icon.png" />
+		<!-- Reference stylesheet -->
+		<link rel="stylesheet" href="styles/style.css" />
+		<!-- Reference jquery library -->
+		<script type="application/javascript" src="scripts/jquery-1.9.1.js"></script>
+		<!-- Reference javascript -->
+		<script type="application/javascript" src="scripts/index.js"></script>
+	</head>
+	
+	<body>
+		<!-- Notice comes out when players did not enable JavaScript in their web browser -->
+		<noscript>
+			<p>
+				In order to play this game, please enable JavaScript in your web browser.
+			</p>
+		</noscript>
+		<div id="gameboard">
+			<div id="game-logo"><img id="game-logo-img" src="images/logo.png" width="600" height="135"></div>
+			<div id="login">
+			  <form method="post" action="connect.php" autocomplete="on">
+					<table>
+						<th colspan="2">Login</th>
+						<tr>
+							<td>&nbsp;</td>
+							<td><input type="hidden" name="action" value="login"></td>
+						</tr>
+						<tr>
+							<td>Player name:</td>
+							<td><input type="text" name="playerid1" maxlength="30" size="30"></td>
+						</tr>
+						<tr>
+							<td>Password:</td><td><input type="password" name="password1" maxlength="30" size="30"></td>
+						</tr>
+						<tr>
+							<td><a onclick="showPopup('register');
+											var popup = $('#register-close');
+											popup.click(function() {
+											hidePopup('register');
+											popup.unbind('click');});">Register!</a></td>
+							<td><input type="submit" value="Login"> <input type="reset" value="Clear"></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+		<div id="register-window" class="window">
+			<h2>Register</h2>
+			<div id="register-close">Back</div>
+			<div class="window-body">
+				<form method = "post" action = "connect.php">
+            		<table>
+						<tr>
+							<td>&nbsp;</td>
+							<td><input type="hidden" name="action" value="register"></td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>Player Name:</td>
+							<td><input type="text" name="playerid2" onblur="validate_playerid(this.value)" maxlength="30" placeholder="at least 5 character" required></td>
+							<td><div id="playerid_state" class="warning">Required</div></td>
+						</tr>
+						<tr>
+							<td>Password:</td>
+							<td><input type="password" name="password2" onblur="validate_password(this.value)" maxlength="30" placeholder="at least 6 character" required></td>
+							<td><div id="password_state" class="warning">Required</div></td>
+						</tr>
+						<tr>
+							<td>Confirm Password:</td>
+							<td><input type="password" name="confirm" onblur="validate_password2(this.value)" maxlength="30" placeholder="confirm password" required></td>
+							<td><div id="password2_state" class="warning">Required</div></td>
+						</tr>
+						<tr>
+							<td>E-mail Address:</td>
+							<td><input type="email" name="email" onblur="validate_email(this.value)" maxlength="40" placeholder="contain '@' sign" required></td>
+							<td><div id="email_state" class="warning">Required</div></td>
+						</tr>
+						<tr>
+							<td>Your Real Name:</td>
+							<td><input type="text" name="name" maxlength="30"></td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>Phone Number:</td>
+							<td><input type="tel" name="phoneno" onblur="validate_phoneno(this.value)" maxlength="20" placeholder="number only"></td>
+							<td><div id="phoneno_state" class="warning"></div></td>
+						</tr>
+						<tr>
+							<td>Home Address:</td>
+							<td><input type="text" name="address" maxlength="100"></td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td><input type = "submit" value = "Submit" id="reg" disabled> <input type = "reset" value = "Clear"></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+		<div id="control" class="clearfix">
+			<div class="left">
+				<h1>Zero Pollution</h1>
+			</div>
+		</div>
+		<div id="footer">
+			<p>Recommended browser: <a href="http://www.google.com/chrome" title="Download Google Chrome" target="_blank">Google Chrome</a> / <a href="http://www.mozilla.com/firefox/" title="Download Mozilla Firefox" target="_blank">Mozilla Firefox</a><font>Copyright &copy; 2013 reserved for <a href="http://www.hkcc-polyu.edu.hk" title="HKCC" target="_blank">HKCC</a></font></p>
+		</div>
+		<div id="popup-background"></div>
+	</body>
+</html>
