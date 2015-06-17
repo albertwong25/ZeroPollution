@@ -1,6 +1,6 @@
 # ZeroPollution
 
-Final Year Project - Online board game
+Final Year Project - Online board game on PHP and Javascript
 
 With the development of information age, web-based applications become more popular so that more developers are most likely preferred to develop web-based applications instead of traditional applications. Using web-based application will be a geat trend on software developing in the future. Thus, a web-based board game is needed to develop for promoting environmental protection.
 Zero Pollution, an innovative board game developed by the students of Hong Kong Community College, mainly focus on propagating a message about awareness of protecting the environment to Hong Kong residents. Through enjoying this board game, players can learn different classification of waste. In order to have a further promotion on green sense, this project, e-Zero Pollution, is to build a web-based application for this board game. This web-based version will not only benefit to both players and publishers, but also protect the environment due to the reduction of paper and plate in the game itself.
