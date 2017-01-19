@@ -9,16 +9,16 @@ Apart from changing some playing rules, the new web-based mobile application of 
 
 Login Screen
 
-![image1](https://github.com/wai25/ZeroPollution/blob/master/images/1.png)
+![image1](https://github.com/wai25/ZeroPollution/blob/master/images/1.png?1)
 
 Register screen
 
-![image2](https://github.com/wai25/ZeroPollution/blob/master/images/2.png)
+![image2](https://github.com/wai25/ZeroPollution/blob/master/images/2.png?1)
 
 Chat room Screen
 
-![image3](https://github.com/wai25/ZeroPollution/blob/master/images/3.png)
+![image3](https://github.com/wai25/ZeroPollution/blob/master/images/3.png?1)
 
 Game Main Menu Screen
 
-![image4](https://github.com/wai25/ZeroPollution/blob/master/images/4.png)
+![image4](https://github.com/wai25/ZeroPollution/blob/master/images/4.png?1)
